@@ -611,13 +611,26 @@ video {
   margin-right: 0.5rem;
 }
 
+.transform{
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .rounded-full{
   border-radius: 9999px;
 }
 
-.bg-blue-700{
-  --tw-bg-opacity: 1;
-  background-color: rgb(29 78 216 / var(--tw-bg-opacity, 1));
+.bg-gradient-to-r{
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.from-blue-500{
+  --tw-gradient-from: #3b82f6 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(59 130 246 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-blue-700{
+  --tw-gradient-to: #1d4ed8 var(--tw-gradient-to-position);
 }
 
 .px-4{
@@ -630,37 +643,6 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.text-left{
-  text-align: left;
-}
-
-.text-right{
-  text-align: right;
-}
-
-.text-start{
-  text-align: start;
-}
-
-.text-end{
-  text-align: end;
-}
-
-.text-5xl{
-  font-size: 3rem;
-  line-height: 1;
-}
-
-.text-xl{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
@@ -671,12 +653,21 @@ video {
   line-height: 2.5rem;
 }
 
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .font-bold{
   font-weight: 700;
 }
 
 .font-medium{
   font-weight: 500;
+}
+
+.font-normal{
+  font-weight: 400;
 }
 
 .font-semibold{
@@ -691,6 +682,23 @@ video {
 .text-gray-700{
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity, 1));
+}
+
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.shadow-lg{
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.transition-all{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 * {
@@ -712,12 +720,17 @@ body{
   color: white;
 }
 
+.containerContent{
+  background-color: white;
+}
+
 .container{
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   padding: 20px;
+  gap: 20px;
 }
 
 .weatherContainer{
@@ -768,9 +781,10 @@ input{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 20px 14px 20px;
   /* background-color: rgb(9, 163, 32); */
   color: #212121;
+  border-bottom: rgb(197, 196, 196) solid 2px;
 }
 
 img{
@@ -782,7 +796,7 @@ img{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 20px 24px 20px;
+  padding: 24px 20px 10px 20px;
   /* background-color: rgb(210, 67, 198); */
   color: #212121;
 }
@@ -793,4 +807,85 @@ img{
   align-items: center;
   gap: 40px;
 }
+
+.forecast-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.forecastContainer{
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.dailyWeather{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.forecastContent{
+  padding-top: 8px;
+  padding-bottom: 10px;
+  border-bottom: rgb(197, 196, 196) solid 2px;
+}
+
+.forecastContent2{
+  padding-top: 8px;
+  padding-bottom: 10px;
+  border-bottom: rgb(197, 196, 196) solid 2px;
+}
+
+.forecastContent3{
+  padding-top: 8px;
+  padding-bottom: 10px;
+  border-bottom: rgb(197, 196, 196) solid 2px;
+}
+
+.forecastContent4{
+  padding-top: 8px;
+  padding-bottom: 10px;
+  border-bottom: rgb(197, 196, 196) solid 2px;
+}
+
+.forecastContent5{
+  padding-top: 8px;
+  padding-bottom: 10px;
+  border-bottom: rgb(197, 196, 196) solid 2px;
+}
+
+.forecastContent6{
+  padding-top: 8px;
+  padding-bottom: 10px;
+  border-bottom: rgb(197, 196, 196) solid 2px;
+}
+
+.forecastContent7{
+  padding-top: 8px;
+  padding-bottom: 10px;
+}
+
+.hover\:scale-110:hover{
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:from-blue-600:hover{
+  --tw-gradient-from: #2563eb var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(37 99 235 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.hover\:to-blue-800:hover{
+  --tw-gradient-to: #1e40af var(--tw-gradient-to-position);
+}
+
+
+
+
+
 
