@@ -720,10 +720,6 @@ body{
   color: white;
 }
 
-.containerContent{
-  background-color: white;
-}
-
 .container{
   height: 100vh;
   display: flex;

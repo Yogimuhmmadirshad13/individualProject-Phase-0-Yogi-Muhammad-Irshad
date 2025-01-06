@@ -29,10 +29,11 @@
             </div>
 
             <div class="weatherSummary">
-                <img src="/public/Image/sun.png" alt="">
+                <img id="weather-icon" src=""></img>
                 <div class="weather-summary-info">
                     <h1 class="temp-info text-4xl font-bold text-blue-700">29 °C</h1>
-                    <h4 class="condition-info text-2xl font-semibold py-2">Clouds</h4>
+                    <div class="condition-info text-2xl font-semibold py-2">Clouds</div>
+                    <!-- <h4 class="condition-info text-2xl font-semibold py-2">Clouds</h4> -->
                 </div>
             </div>
 
@@ -40,20 +41,23 @@
                 <div class="condition-info">
                     <div class="humidity">
                         <span class="material-symbols-outlined">location_on</span>
-                        <h1 class="humidity text-xl font-semibold">64 %</h1>
+                        <div class="humidityHeader text-xl font-semibold">64%</div>
+                        <!-- <h1 id="humidity" class="humidity text-xl font-semibold">64 %</h1> -->
                         <h4 class="humidity-info font-medium" style="color: gray;">Humidity</h4>
                     </div>
 
                     <div class="wind">
                         <span class="material-symbols-outlined">location_on</span>
-                        <h1 class="wind text-xl font-semibold">5 km/h</h1>
+                        <div class="windHeader text-xl font-semibold">5 km/h</div>
+                        <!-- <h1 class="wind text-xl font-semibold">5 km/h</h1> -->
                         <h4 class="wind-info font-medium" style="color: gray;">Wind</h4>
                     </div>
 
                     <div class="temp">
                         <span class="material-symbols-outlined">location_on</span>
-                        <h1 class="temp text-xl font-semibold">29 °C</h1>
-                        <h4 class="temp-info font-medium" style="color: gray;">Temp</h4>
+                        <div class="tempFeel text-xl font-semibold">29 °C</div>
+                        <!-- <h1 class="temp text-xl font-semibold">29 °C</h1> -->
+                        <h4 class="temp-info font-medium" style="color: gray;">Feels Like</h4>
                     </div>    
                 </div>
             </div>
@@ -143,9 +147,10 @@
 
         </div>
 
-
-
     </div>
+
+    <script src="wmoCode.js"></script>
+    <script src="index.js"></script>
 
 </body>
 
