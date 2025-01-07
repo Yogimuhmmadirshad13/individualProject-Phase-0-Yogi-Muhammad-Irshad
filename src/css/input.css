@@ -48,8 +48,8 @@ body{
 
 
 input{
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-top: 12px;
     padding-bottom: 12px;
     background-color: #f3f3f3;
@@ -105,7 +105,7 @@ img{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 40px;
+    gap: 32px;
 }
 
 .forecast-header{

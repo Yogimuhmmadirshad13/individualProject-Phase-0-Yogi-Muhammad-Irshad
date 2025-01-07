@@ -29,6 +29,23 @@ async function getWeather() {
         currentCondition.innerHTML = code[currentCode][currentDay].description;
         currentIcon.src = code[currentCode][currentDay].image;
 
+        const forecastInfo = document.querySelector(".forecast-info");
+        data.daily.time.forEach((time, i) => {
+            const loopCode = data.daily.weather_code[i];
+
+            forecastInfo.innerHTML += `
+            <div class="forecastContent">
+                <h4 class="date-info font-normal py-2" style="color: gray;">${time}</h4>
+                <div class="dailyWeather">
+                    <h4 class="forecast-condition text-xl font-semibold w-40" style="color: black;">${code[loopCode][currentDay].description}</h4>
+                    <img class="forecast-icon" src="${code[loopCode][currentDay].image}" style="width: 36px; height: 36px;"</img>
+                    <h4 class="wind-content text-xl font-medium" style="color: black;">${data.daily.wind_speed_10m_max[i]}km/h</h4>
+                    <h4 class="temp-content text-xl font-medium" style="color: black;">${data.daily.temperature_2m_min[i]}°C</h4>
+                </div>
+            </div>
+            `
+        })
+
     } catch (error) {
         console.log(error); 
     }

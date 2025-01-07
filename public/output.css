@@ -611,6 +611,10 @@ video {
   margin-right: 0.5rem;
 }
 
+.w-40{
+  width: 10rem;
+}
+
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -744,8 +748,8 @@ body{
 }
 
 input{
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 12px;
   padding-bottom: 12px;
   background-color: #f3f3f3;
@@ -801,7 +805,7 @@ img{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 40px;
+  gap: 32px;
 }
 
 .forecast-header{
