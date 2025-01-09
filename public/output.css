@@ -621,6 +621,10 @@ video {
   --tw-gradient-to: #1d4ed8 var(--tw-gradient-to-position);
 }
 
+.p-2{
+  padding: 0.5rem;
+}
+
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
@@ -634,6 +638,14 @@ video {
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.pt-3{
+  padding-top: 0.75rem;
+}
+
+.pt-4{
+  padding-top: 1rem;
 }
 
 .text-2xl{
@@ -732,13 +744,13 @@ body{
   position: relative;
   width: 100%;
   gap: 90px;
-  padding: 14px 14px 24px 14px ;
+  padding: 14px 6px 24px 6px ;
   /* background-color: blue; */
 }
 
 input{
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 60px;
   padding-top: 12px;
   padding-bottom: 12px;
   background-color: #f3f3f3;
@@ -750,7 +762,7 @@ input{
 
 .weatherInfo{
   color: #212121;
-  padding: 4px 20px 4px 20px;
+  padding: 4px 8px 4px 8px;
   /* background-color: brown; */
 }
 
@@ -786,27 +798,27 @@ img{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 20px 10px 20px;
+  padding: 20px 20px 10px 20px;
   /* background-color: rgb(210, 67, 198); */
   color: #212121;
 }
 
 .weatherCondition .humidity{
-  width: 100px;
+  width: 110px;
   padding: 12px;
   background-color: aliceblue;
   border-radius: 8px;
 }
 
 .weatherCondition .wind{
-  width: 100px;
+  width: 110px;
   padding: 12px;
   background-color: aliceblue;
   border-radius: 8px;
 }
 
 .weatherCondition .temp{
-  width: 100px;
+  width: 110px;
   padding: 12px;
   background-color: aliceblue;
   border-radius: 8px;
