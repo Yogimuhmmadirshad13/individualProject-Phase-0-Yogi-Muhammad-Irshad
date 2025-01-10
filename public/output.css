@@ -621,10 +621,6 @@ video {
   --tw-gradient-to: #1d4ed8 var(--tw-gradient-to-position);
 }
 
-.p-2{
-  padding: 0.5rem;
-}
-
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
@@ -638,14 +634,6 @@ video {
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-}
-
-.pt-3{
-  padding-top: 0.75rem;
-}
-
-.pt-4{
-  padding-top: 1rem;
 }
 
 .text-2xl{
